@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Test1</title>
+</head>
+<body>
+
+<!--
+--------------------------------
+HTML
+--------------------------------
+
+html tags:
+
+- a tag consists of an element and optional attributes.
+- most tags must be closed. they wrap the content.
+- for some tags the closing tag can/must be omitted (self-closing tag).
+
+boilerplate code:
+
+- gives browser info about page and how to display it
+- there can be more meta tags under <head></head>, e.g. giving search engines info about the content
+
+-->
+
+<!--
+------------------------------------------
+html elements
+------------------------------------------
+-->
+
+<h1>l1 heading</h1>
+<h2>l2 heading</h2>
+<h6>l6 heading</h6>
+<!--headings
+- larger number = smaller font
+- smallest is h6
+-->
+
+<br><!--line break-->
+<hr><!--horizontal line (or more generally a divisor)-->
+
+<p></p>
+<!--paragraph
+- block level element, closed automatically if another block-level element starts.
+- paragraph are automatically separated, e.g. by a line break.
+-->
+<a href="https://devdocs.io/html/element/p">paragraph</a>
+
+<i></i>
+<!--kursiv-->
+
+<em></em>
+<!--emphasis-->
+
+<b></b>
+<!--bold-->
+
+<strong></strong>
+<!--strong-->
+
+<!--
+- preferably use strong and em over i and b, as styling should be done by css
+-->
+
+<ul></ul>
+<!--unordered list (bullet points)
+- a ul can be nested inside a ul to create a nested list
+-->
+
+<ol></ol>
+<!--ordered list
+- ul and ol can be nested in each other
+- use type attribute to e.g. change to roman numbers
+- use start attribute to change at > 1
+-->
+<a href="https://devdocs.io/html/element/ol">ordered list</a>
+
+<li></li>
+<!--list elements
+- used both for ul and ol
+-->
+
+<img src="MicrosoftTeams-image (1).png" alt="test image">
+<br>
+<!-- image
+- self-closing tag
+- src is a URI to the image
+- can be a web address or a filepath if the image is present locally (in the same folder as the html file)
+- alt is a text displayed if the image can't be rendered. Also used for accessibility and by search engines.
+-
+-->
+<a href="https://devdocs.io/html/element/img">image</a>
+<br>
+<a href="https://devdocs.io/html/element/a">anchor</a>
+<!-- anchor
+- can link to web pages or local html files
+-->
+
+<table>
+    <thead>
+        <tr>
+            <th>c1</th>
+            <th>c2</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>cell1</td>
+            <td>cell2</td>
+        </tr>
+        <tr>
+            <td>cell3</td>
+            <td>cell4</td>
+        </tr>
+    </tbody>
+    <tfoot>
+
+    </tfoot>
+</table>
+<!-- table
+- tr: row
+- td: column
+- th: table header cell (like td, but usually bold)
+
+- separation into header, body and footer allows adressing them specifically in css or js
+- attributes like border, lines, etc. should not be done in html
+- can also be used for layout, e.g. image left, text right
+- tables can be nested (e.g. for layout)
+-->
+<a href="https://devdocs.io/html/element/table">table</a>
+<br>
+
+<form action="mailto:test@test.com" method="post" enctype="text/plain">
+    <label>enter your CC number: </label>
+    <input type="text" name="" value="">
+    <input type="submit" name="">
+    <input type="color">
+    <label>sell your soul?</label>
+    <input type="checkbox">
+    <label>enter password </label>
+    <input type="password">
+    <input type="submit">
+    <br>
+    <textarea name="message" id="" cols="30" rows="10"></textarea>
+</form>
+<!-- form
+- actual behaviour requires js
+- there are many types for input. for submit a standard submit button is created if there is no value attribute.
+- input is self-closing
+- textarea: textbox, e.g. for messages in forms. resizable by user, default defined by attributes.
+-->
+<a href="https://devdocs.io/html/element/input">form</a>
+<a href="https://devdocs.io/html/element/form">input</a>
+<br>
+
+
+<!--
+------------------------------------------
+html attributes
+------------------------------------------
+-->
+
+</body>
+</html>
